@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video video {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.video.popOut-bottom {
+    position: fixed;
+    right: 20px;
+    width: 420px;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+    to {
+        bottom: 20px;
+    }
+}
+
+.content {
+    margin-top: 50px;
+    padding: 0 40px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.content h1 {
+    font-size: 55px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content h2 {
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content p {
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.content ul {
+    /* list-style: none; */
+    padding: 0 0 20px 20px;
+}
+
+.content ul li {
+    font-size: 20px;
+}
+
+center {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
